@@ -8,5 +8,6 @@ env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
 applications:
 - name: portfolio
+  host: portfolio-${random-word}
   path: springboottrades-portfolio/build/libs/portfolio-0.2.jar
   services: [ traderdb,  eureka-service  ]
